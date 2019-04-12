@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body
+      
+      {
+        background-color:#f5deb3;
+      }
+      .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+      } 
+      
+   .mySlides {
+     display:none;
+      }
+      
+      
+    </style>
+    <title>document</title>
+    <body>
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Home.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Candy.html">Products</a>
+  <a href="Photos.html">Photos</a>
+  <a href="Location.html">Location</a>    
+  <a href="Reviews.html">Reviews</a>
+</div>
+    
+ <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+ 
+ <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+   
+   
+   var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+  
+</script>
+      
+    <div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-0/c0.22.200.200a/p200x200/29512270_1642486852484598_5448397466733096788_n.jpg?_nc_cat=100&_nc_ht=scontent-atl3-1.xx&oh=e5d33c10fee12ba4fcfd2c6a291279fd&oe=5D21C877" style="width:25%" style="height:35%">
+  <img class="mySlides" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-0/c0.22.200.200a/p200x200/47685292_1982390151827598_8137356020956528640_n.jpg?_nc_cat=103&_nc_ht=scontent-atl3-1.xx&oh=1b950a6409558194c39a34dfd358a65d&oe=5D18948B" style="width:25%" style="height:35%">
+  <img class="mySlides" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-0/c0.22.200.200a/p200x200/37926379_1791990980867517_4203829095001227264_n.jpg?_nc_cat=103&_nc_ht=scontent-atl3-1.xx&oh=0d468eb834a0228b0aacef6bf693d7fd&oe=5CE3A343" style="width:25%" style="height:35%">
+  <img class="mySlides" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-0/c0.22.200.200a/p200x200/18882202_1362998230433463_4860938006946195807_n.jpg?_nc_cat=107&_nc_ht=scontent-atl3-1.xx&oh=80daa5350b493920697b29dbeeca55d5&oe=5D16A192" style="width:25%" style="height:35%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>  
+      
+      
+      
+      
+      
+      
+      
+      
+    </body>
+  </head>

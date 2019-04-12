@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          body {
+            background-color: #f5deb3;
+          }
+          
+          h1 {
+            color: brown;
+            text-align: center;
+            font-face: "Times New Roman";
+            font-size:45px;
+          }
+          p1 {
+            text-align: left;
+            font-size:10px;
+          }
+          p2 {
+            text-align: center;
+            font-size:10px;
+          }
+          .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+  
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+      } 
+          
+          figcaption{
+            color:brown;
+            font-size:20px;
+          }         
+ 
+          img{
+            right-align;
+          }
+         
+          
+        </style>
+  <title>Document</title>
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Home.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Candy.html">Products</a>
+  <a href="Photos.html">Photos</a>
+  <a href="Location.html">Location</a>    
+  <a href="Reviews.html">Reviews</a>
+</div>
+    
+ <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+ 
+ <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+  <h1> Best Sellers </h1>
+  
+  <figure>   
+    
+    <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-0/c0.22.200.200a/p200x200/19225048_1374887209244565_6405243725633006173_n.jpg?_nc_cat=105&_nc_ht=scontent-atl3-1.xx&oh=572925698f4540f51aae2a46c864d810&oe=5D20995B" width="330"> <br>
+    <figcaption>
+      Chocolate Covered Strawberries
+    </figcaption>
+    
+    <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-0/c0.22.200.200a/p200x200/29542323_1642486832484600_4753423578875754162_n.jpg?_nc_cat=106&_nc_ht=scontent-atl3-1.xx&oh=61667d28e177ed392a158a5dc5beb73b&oe=5D22D157" height="210" width="330"> <br>
+    <figcaption>
+      Easter Basket
+    </figcaption>
+    
+      <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-0/c55.0.200.200a/p200x200/40449255_1846193788780569_2447649072547364864_n.jpg?_nc_cat=100&_nc_ht=scontent-atl3-1.xx&oh=4acd69f307a2a6ebc605325a6bd76b86&oe=5D1122F4" alt="theres no place like home sign" align="center" width="330" height="250"> <br>
+    <figcaption>
+      Bulldog Sign
+    </figcaption>  
+    
+   
+    
+  </figure>
+  
+ 
+  
+ 
+  
+</body>
+</html>
